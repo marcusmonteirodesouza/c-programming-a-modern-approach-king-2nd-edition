@@ -8,7 +8,3 @@ int main() {
   double tax_added_amount = amount + TaxValue(amount);
   printf("The tax-added amount is: $%f", tax_added_amount);
 }
-
-double TaxValue(const double amount) {
-  return amount * 0.05;
-}
