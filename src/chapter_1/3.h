@@ -1,6 +1,8 @@
 /**
- * Returns the volume of a sphere
+ * @brief Returns the volume of a sphere
+ * 
  * @param radius The sphere's radius in meters
- * @returns The volume of the sphere or -1 if the radius is invalid
+ * @param result A pointer to the address where the result is stored
+ * @return 0 if successful otherwise errno
  */
-double SphereVolume(const double radius);
+int SphereVolume(const double radius, double *result);

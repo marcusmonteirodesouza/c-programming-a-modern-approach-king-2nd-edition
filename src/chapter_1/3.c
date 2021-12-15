@@ -1,10 +1,12 @@
+#include <errno.h>
 #include <math.h>
 #include "3.h"
 
-double SphereVolume(const double radius) {
+int SphereVolume(const double radius, double *result) {
   if (radius < 0) {
-    return -1;
+    return EINVAL;
   }
   
-  return (4.0 / 3.0) * M_PI * pow(radius, 3);
+  *result = (4.0 / 3.0) * M_PI * pow(radius, 3);
+  return 0;
 }

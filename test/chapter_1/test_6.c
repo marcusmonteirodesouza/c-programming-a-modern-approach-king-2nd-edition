@@ -1,4 +1,3 @@
-#include <math.h>
 #include "unity.h"
 #include "6.h"
 

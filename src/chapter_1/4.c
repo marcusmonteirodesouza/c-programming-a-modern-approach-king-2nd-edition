@@ -1,9 +1,11 @@
+#include <errno.h>
 #include "4.h"
 
-double TaxValue(const double amount) {
+int TaxValue(const double amount, double *result) {
   if (amount < 0) {
-    return -1;
+    return EINVAL;
   }
   
-  return amount * 0.05;
+  *result = amount * 0.05;
+  return 0;
 }

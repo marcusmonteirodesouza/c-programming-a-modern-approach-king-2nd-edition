@@ -1,6 +1,7 @@
 /**
- * Returns tax value of an amount
+ * @brief Returns tax value of an amount
  * @param amount The amount in dollars
- * @returns The tax value or -1 if the amount is invalid
+ * @param result A pointer to the address where the result is stored
+ * @returns 0 if successful otherwise errno
  */
-double TaxValue(const double amount);
+int TaxValue(const double amount, double *result);
