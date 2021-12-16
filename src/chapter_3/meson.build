@@ -7,3 +7,4 @@ foreach lib, src : lib_list
 endforeach
 
 executable('chapter_3_1', '1_main.c')
+executable('chapter_3_2', '2_main.c')
