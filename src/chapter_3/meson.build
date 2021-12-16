@@ -11,3 +11,4 @@ chapter_3_3_dep = declare_dependency(link_with: chapter_3_lib_3, include_directo
 executable('chapter_3_1', '1_main.c')
 executable('chapter_3_2', '2_main.c')
 executable('chapter_3_3', '3_main.c', dependencies: [chapter_3_3_dep])
+executable('chapter_3_4', '4_main.c')
