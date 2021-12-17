@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 
-int Parse_ISBN(char *s, ISBN *result) {
+int ParseISBN(char *s, ISBN *result) {
   char *s_copy = NULL;
   s_copy = strdup(s);
 

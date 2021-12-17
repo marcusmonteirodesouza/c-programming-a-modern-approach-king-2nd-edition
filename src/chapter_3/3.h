@@ -15,4 +15,4 @@ typedef struct ISBN ISBN;
  * @param result A pointer to the address where the result is stored
  * @return int 0 if the parsing was successful otherwise errno
  */
-int Parse_ISBN(char *s, ISBN *result);
+int ParseISBN(char *s, ISBN *result);

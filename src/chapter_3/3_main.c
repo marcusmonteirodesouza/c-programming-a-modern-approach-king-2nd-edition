@@ -8,7 +8,7 @@ int main() {
   scanf("%s", isbn);
 
   ISBN parsed_isbn = {};
-  const int errorCode = Parse_ISBN(isbn, &parsed_isbn);
+  const int errorCode = ParseISBN(isbn, &parsed_isbn);
   if (errorCode != 0) {
     strerror(errorCode);
     return errorCode;
